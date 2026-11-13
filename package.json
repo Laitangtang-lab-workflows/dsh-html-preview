@@ -1,0 +1,19 @@
+{
+  "name": "dsh-html-preview",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Live HTML preview inside DSH chat: fenced html blocks auto-render in a sandboxed iframe, result shown by default with source behind a toggle (isolated origin, no local file access)",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": ["locale/*.json"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  }
+}

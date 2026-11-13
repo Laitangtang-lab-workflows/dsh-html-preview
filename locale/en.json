@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "In-chat HTML Preview",
+    "description": "Automatically render fenced html blocks in chat as sandboxed iframes: rendered result by default, source behind a toggle, resizable frame, scripts run in an isolated origin."
+  }
+}
